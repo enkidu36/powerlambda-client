@@ -1,0 +1,241 @@
+/* =========================
+   Powerλ Design System
+   ========================= */
+
+/* ---------- CSS Variables ---------- */
+:root {
+  --header-height: 120px;
+  --bg: #0b1220;
+  --surface: #111827;
+  --card: #1f2937;
+
+  --text-primary: #f9fafb;
+  --text-secondary: #9ca3af;
+  --text-muted: #6b7280;
+
+  --green: #22c55e;
+  --blue: #3b82f6;
+  --orange: #f59e0b;
+  --red: #ef4444;
+
+  --gradient: linear-gradient(135deg, #22c55e, #3b82f6);
+
+  --border: #374151;
+
+  --radius: 8px;
+}
+
+/* ---------- Base ---------- */
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text-primary);
+  font-family: Inter, system-ui, -apple-system, sans-serif;
+}
+
+/* Headings */
+h1 {
+  font-size: 24px;
+  margin-bottom: 16px;
+}
+
+/* ---------- Layout ---------- */
+.app-container {
+  display: flex;
+}
+
+.main {
+  margin-left: 240px;
+  padding: 20px;
+  width: 100%;
+}
+
+/* ---------- Sidebar ---------- */
+.sidebar {
+  position: fixed;
+  width: 220px;
+  height: 100vh;
+  background: var(--bg);
+  padding: 16px;
+  border-right: 1px solid var(--border);
+}
+
+.nav-item {
+  padding: 10px 12px;
+  color: var(--text-secondary);
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+.nav-item:hover {
+  background: var(--surface);
+}
+
+.nav-item.active {
+  color: var(--text-primary);
+  border-left: 3px solid var(--blue);
+  background: var(--surface);
+}
+
+/* ---------- Buttons ---------- */
+.btn {
+  padding: 10px 16px;
+  border-radius: var(--radius);
+  border: none;
+  cursor: pointer;
+  font-weight: 500;
+  margin-right: 8px;
+}
+
+.btn-primary {
+  background: var(--gradient);
+  color: white;
+}
+
+.btn-primary:hover {
+  filter: brightness(1.1);
+}
+
+.btn-primary:active {
+  transform: scale(0.98);
+}
+
+.btn-secondary {
+  background: var(--card);
+  color: var(--text-primary);
+  border: 1px solid var(--border);
+}
+
+.btn-secondary:hover {
+  background: var(--surface);
+}
+
+.btn-ghost {
+  background: transparent;
+  color: var(--text-secondary);
+}
+
+.btn-ghost:hover {
+  background: var(--surface);
+}
+
+/* ---------- Cards ---------- */
+.card {
+  background: var(--card);
+  border-radius: 12px;
+  padding: 16px;
+  min-width: 140px;
+}
+
+.card-header {
+  font-size: 13px;
+  color: var(--text-secondary);
+  margin-bottom: 6px;
+}
+
+/* ---------- Metric Card ---------- */
+.metric-card .label {
+  color: var(--text-muted);
+  font-size: 12px;
+}
+
+.metric-card .value {
+  font-size: 28px;
+  font-weight: 600;
+  margin-top: 4px;
+}
+
+.metric-card .trend {
+  font-size: 12px;
+  margin-top: 4px;
+}
+
+.trend.positive {
+  color: var(--green);
+}
+
+.trend.negative {
+  color: var(--red);
+}
+
+/* ---------- Inputs ---------- */
+.input {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  color: var(--text-primary);
+  padding: 10px;
+  border-radius: var(--radius);
+  width: 240px;
+}
+
+.input:focus {
+  outline: none;
+  border-color: var(--blue);
+}
+
+/* ---------- Interval Block ---------- */
+.interval {
+  border-left: 4px solid var(--orange);
+  padding: 8px 12px;
+  background: var(--surface);
+  margin-bottom: 8px;
+}
+
+/* ---------- Badges ---------- */
+.badge {
+  padding: 4px 8px;
+  border-radius: 999px;
+  font-size: 12px;
+  display: inline-block;
+}
+
+.badge-green { background: var(--green); }
+.badge-blue { background: var(--blue); }
+.badge-orange { background: var(--orange); }
+.badge-red { background: var(--red); }
+
+/* ---------- Utility ---------- */
+.row {
+  display: flex;
+  gap: 16px;
+}
+
+.mt-20 {
+  margin-top: 20px;
+}
+
+.mb-16 {
+  margin-bottom: 16px;
+}
+
+
+/* ---------- Header / Banner ---------- */
+.header {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: var(--header-height);
+  background: var(--surface);
+  border-bottom: 1px solid var(--border);
+
+  display: flex;
+  align-items: center;
+  padding: 0 16px;
+
+  z-index: 1000;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.logo-img {
+  height: 156px;
+}
+
+.logo-text {
+  font-weight: 600;
+  font-size: 18px;
+}

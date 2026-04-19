@@ -1,0 +1,30 @@
+# --- shadow-cljs & ClojureScript ---
+.shadow-cljs/
+public/js/
+target/
+out/
+.cpcache/
+resources/public/js/cljs-runtime/*
+
+# --- Dependencies ---
+node_modules/
+.cljs_node_repl/
+.lsp/
+
+# --- clj-kondo ---
+# Ignore the cache but KEEP the config files
+.clj-kondo/.cache/
+
+# --- Emacs / CIDER ---
+.nrepl-port
+.nrepl-history
+*~
+\#*\#
+
+auto-save-list/
+tramp
+.\#*
+
+# --- System / Logs ---
+.DS_Store
+*.log
