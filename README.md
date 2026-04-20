@@ -13,7 +13,7 @@ Design principles:
 
 ---
 
-## 🎨 Color System new test
+## 🎨 Color System
 
 ### Base Colors (Foundation)
 
