@@ -4,7 +4,7 @@ public/js/
 target/
 out/
 .cpcache/
-resources/public/js/cljs-runtime/*
+resources/public/js/cljs-runtime/
 
 # --- Dependencies ---
 node_modules/
@@ -21,8 +21,6 @@ node_modules/
 *~
 \#*\#
 
-auto-save-list/
-tramp
 .\#*
 
 # --- System / Logs ---
